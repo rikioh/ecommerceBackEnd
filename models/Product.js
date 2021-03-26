@@ -1,6 +1,5 @@
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
-const { FOREIGNKEYS } = require('sequelize/types/lib/query-types');
 // import our database connection from config.js
 const sequelize = require('../config/connection');
 
@@ -17,7 +16,7 @@ Product.init(
       primaryKey: true,
       autoIncrement: true
     },
-    catergory_name: {
+    product_name: {
       type: DataTypes.STRING,
       allowNull: false
     },
